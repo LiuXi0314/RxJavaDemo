@@ -11,6 +11,7 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.operators.observable.ObservableSubscribeOn;
 
 public class FirstActivity extends BaseActivity {
 
@@ -73,6 +74,8 @@ public class FirstActivity extends BaseActivity {
 
         //建立连接
         observable.subscribe(observer);
+
+
 
 
     }
