@@ -1,9 +1,12 @@
 package com.lx.rx.java.demo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 
-import com.lx.rx.java.demo.activity.Utils.LogUtils;
+import com.lx.rx.java.demo.R;
+import com.lx.rx.java.demo.Utils.LogUtils;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -11,15 +14,17 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.internal.operators.observable.ObservableSubscribeOn;
+import io.reactivex.functions.Predicate;
 
 public class FirstActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_first);
+        findViewById(R.id.secondActivity).setOnClickListener(this);
+        findViewById(R.id.MainActivity).setOnClickListener(this);
 
-        testObserver();
 
     }
 
@@ -76,7 +81,33 @@ public class FirstActivity extends BaseActivity {
         observable.subscribe(observer);
 
 
+        Observable observable1 = Observable.just(1, 2, 3, 4, 5).filter(new Predicate<Integer>() {
+            @Override
+            public boolean test(@NonNull Integer integer) throws Exception {
+
+                return integer % 2 == 0;
+            }
+        });
+
+        observable1.subscribe(observer);
 
 
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        int id = v.getId();
+        if (id == R.id.secondActivity) {
+            Intent intent = new Intent();
+            intent.setAction("com.lx.rx.java.second");
+            startActivity(intent);
+        } else if (id == R.id.MainActivity) {
+            Intent intent = new Intent();
+            intent.setAction("com.lx.rx.java.second");
+            intent.addCategory("android.intent.category.INFO");
+            startActivity(intent);
+        }
     }
 }

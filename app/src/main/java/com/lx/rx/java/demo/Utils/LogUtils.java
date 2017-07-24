@@ -1,10 +1,6 @@
-package com.lx.rx.java.demo.activity.Utils;
+package com.lx.rx.java.demo.Utils;
 
 import android.util.Log;
-
-/**
- * Created by david on 17-7-20.
- */
 
 public class LogUtils {
     private static final String TAG = "RxJava";
