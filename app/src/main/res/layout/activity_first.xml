@@ -13,4 +13,14 @@
         android:id="@+id/MainActivity"
         style="@style/ButtonStyle"
         android:text="MainActivity"/>
+
+    <TextView
+        android:id="@+id/PushModeDemo"
+        style="@style/ButtonStyle"
+        android:text="PushDemoActivity"/>
+
+    <TextView
+        android:id="@+id/ObservableDemo"
+        style="@style/ButtonStyle"
+        android:text="ObservableDemo"/>
 </LinearLayout>

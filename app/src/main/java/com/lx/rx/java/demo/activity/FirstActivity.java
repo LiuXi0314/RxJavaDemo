@@ -24,7 +24,8 @@ public class FirstActivity extends BaseActivity {
         setContentView(R.layout.activity_first);
         findViewById(R.id.secondActivity).setOnClickListener(this);
         findViewById(R.id.MainActivity).setOnClickListener(this);
-
+        findViewById(R.id.PushModeDemo).setOnClickListener(this);
+        findViewById(R.id.ObservableDemo).setOnClickListener(this);
 
     }
 
@@ -108,6 +109,12 @@ public class FirstActivity extends BaseActivity {
             intent.setAction("com.lx.rx.java.second");
             intent.addCategory("android.intent.category.INFO");
             startActivity(intent);
+        } else if (id == R.id.PushModeDemo) {
+            startActivity(new Intent(this, PushDemoActivity.class));
+        } else if (id == R.id.ObservableDemo) {
+            startActivity(new Intent(this, ObserverDemoActivity.class));
         }
     }
+
+
 }

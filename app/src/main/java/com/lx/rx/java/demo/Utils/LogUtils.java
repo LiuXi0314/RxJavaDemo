@@ -2,6 +2,8 @@ package com.lx.rx.java.demo.Utils;
 
 import android.util.Log;
 
+import java.util.Date;
+
 public class LogUtils {
     private static final String TAG = "RxJava";
 
@@ -29,5 +31,10 @@ public class LogUtils {
         if (LogEnable) {
             Log.d(TAG, string);
         }
+    }
+
+
+    public static void logCurrentTime() {
+        LogUtils.d(new Date(System.currentTimeMillis()).toString());
     }
 }
