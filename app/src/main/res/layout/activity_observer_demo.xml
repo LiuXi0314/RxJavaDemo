@@ -19,9 +19,4 @@
         android:text="demo2"/>
 
 
-    <TextView
-        android:id="@+id/demo3"
-        style="@style/ButtonStyle"
-        android:text="demo3"/>
-
 </LinearLayout>

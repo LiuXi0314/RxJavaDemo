@@ -6,6 +6,8 @@ import android.view.View;
 import com.lx.rx.java.demo.R;
 import com.lx.rx.java.demo.Utils.LogUtils;
 import com.lx.rx.java.demo.bean.ObservableData;
+import com.lx.rx.java.demo.bean.Reader;
+import com.lx.rx.java.demo.bean.Tutorial;
 import com.lx.rx.java.demo.listener.Observer;
 
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.List;
 public class ObserverDemoActivity extends BaseActivity implements Observer {
 
     private ObservableData mObservableData;
+    private Tutorial mTutorial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,6 @@ public class ObserverDemoActivity extends BaseActivity implements Observer {
         setContentView(R.layout.activity_observer_demo);
         findViewById(R.id.demo1).setOnClickListener(this);
         findViewById(R.id.demo2).setOnClickListener(this);
-        findViewById(R.id.demo3).setOnClickListener(this);
     }
 
     private void test1() {
@@ -35,11 +37,14 @@ public class ObserverDemoActivity extends BaseActivity implements Observer {
     }
 
 
-    private void testMode() {
-
-    }
-
     private void testWithRxJava() {
+        if (mTutorial == null) mTutorial = new Tutorial("Android探索者","锲而不舍");
+
+        Reader reader1 = new Reader("a","12345@gmail.com");
+
+
+
+
 
     }
 
@@ -50,8 +55,6 @@ public class ObserverDemoActivity extends BaseActivity implements Observer {
         if (id == R.id.demo1) {
             test1();
         } else if (id == R.id.demo2) {
-            testMode();
-        } else if (id == R.id.demo3) {
             testWithRxJava();
         }
     }
