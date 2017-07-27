@@ -18,4 +18,10 @@
         android:id="@+id/rxJava2"
         style="@style/ButtonStyle"
         android:text="RxJava2"/>
+
+    <TextView
+        android:id="@+id/Stream"
+        style="@style/ButtonStyle"
+        android:text="Stream"/>
+
 </LinearLayout>

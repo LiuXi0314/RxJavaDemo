@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".activity.RxJavaActivity">
         </activity>
+        <activity android:name=".activity.Java8StreamActivity">
+        </activity>
     </application>
 
 </manifest>
