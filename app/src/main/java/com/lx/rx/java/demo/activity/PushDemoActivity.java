@@ -7,7 +7,6 @@ import com.lx.rx.java.demo.Utils.LogUtils;
 import com.lx.rx.java.demo.bean.PushData;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class PushDemoActivity extends BaseActivity implements PushData.PushCallBack {
 
@@ -16,6 +15,7 @@ public class PushDemoActivity extends BaseActivity implements PushData.PushCallB
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("推模式");
         setContentView(R.layout.activity_push_demo);
         loadData();
     }

@@ -5,22 +5,17 @@
               android:orientation="vertical">
 
     <TextView
-        android:id="@+id/secondActivity"
-        style="@style/ButtonStyle"
-        android:text="SecondActivity"/>
-
-    <TextView
-        android:id="@+id/MainActivity"
-        style="@style/ButtonStyle"
-        android:text="MainActivity"/>
-
-    <TextView
         android:id="@+id/PushModeDemo"
         style="@style/ButtonStyle"
-        android:text="PushDemoActivity"/>
+        android:text="推模式"/>
 
     <TextView
         android:id="@+id/ObservableDemo"
         style="@style/ButtonStyle"
-        android:text="ObservableDemo"/>
+        android:text="观察者模式"/>
+
+    <TextView
+        android:id="@+id/rxJava2"
+        style="@style/ButtonStyle"
+        android:text="RxJava2"/>
 </LinearLayout>

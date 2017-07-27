@@ -1,8 +1,6 @@
 package com.lx.rx.java.demo.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.lx.rx.java.demo.R;
@@ -16,18 +14,16 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Predicate;
 
-public class FirstActivity extends BaseActivity {
+
+public class RxJavaActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
-        findViewById(R.id.secondActivity).setOnClickListener(this);
-        findViewById(R.id.MainActivity).setOnClickListener(this);
-        findViewById(R.id.PushModeDemo).setOnClickListener(this);
-        findViewById(R.id.ObservableDemo).setOnClickListener(this);
-
+        setContentView(R.layout.activity_rx_java);
+        findViewById(R.id.test1).setOnClickListener(this);
     }
+
 
     private void testObserver() {
         final Observable<Integer> observable = Observable.create(new ObservableOnSubscribe<Integer>() {
@@ -92,29 +88,15 @@ public class FirstActivity extends BaseActivity {
 
         observable1.subscribe(observer);
 
-
     }
-
 
     @Override
     public void onClick(View v) {
         super.onClick(v);
         int id = v.getId();
-        if (id == R.id.secondActivity) {
-            Intent intent = new Intent();
-            intent.setAction("com.lx.rx.java.second");
-            startActivity(intent);
-        } else if (id == R.id.MainActivity) {
-            Intent intent = new Intent();
-            intent.setAction("com.lx.rx.java.second");
-            intent.addCategory("android.intent.category.INFO");
-            startActivity(intent);
-        } else if (id == R.id.PushModeDemo) {
-            startActivity(new Intent(this, PushDemoActivity.class));
-        } else if (id == R.id.ObservableDemo) {
-            startActivity(new Intent(this, ObserverDemoActivity.class));
+
+        if (id == R.id.test1) {
+            testObserver();
         }
     }
-
-
 }

@@ -6,22 +6,9 @@
     android:orientation="vertical"
     >
 
-
     <TextView
-        android:id="@+id/demo1"
+        android:id="@+id/test1"
         style="@style/ButtonStyle"
-        android:text="demo1"/>
-
-
-    <TextView
-        android:id="@+id/demo2"
-        style="@style/ButtonStyle"
-        android:text="demo2"/>
-
-
-    <TextView
-        android:id="@+id/demo3"
-        style="@style/ButtonStyle"
-        android:text="demo3"/>
+        android:text="test observable"/>
 
 </LinearLayout>
