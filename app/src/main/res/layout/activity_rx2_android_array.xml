@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/fromArray"
+            style="@style/ButtonStyle"
+            android:text="fromArray"/>
+
+        <TextView
+            android:id="@+id/map"
+            style="@style/ButtonStyle"
+            android:text="map"/>
+
+        <TextView
+            android:id="@+id/filter"
+            style="@style/ButtonStyle"
+            android:text="filter"/>
+
+        <TextView
+            android:id="@+id/fromIterable"
+            style="@style/ButtonStyle"
+            android:text="fromIterable"/>
+
+        <TextView
+            android:id="@+id/range"
+            style="@style/ButtonStyle"
+            android:text="range"/>
+
+        <TextView
+            android:id="@+id/map_if"
+            style="@style/ButtonStyle"
+            android:text="map_if"/>
+
+    </LinearLayout>
+</ScrollView>

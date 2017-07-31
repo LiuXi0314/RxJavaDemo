@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".activity.RxJavaActivity">
         </activity>
-        <activity android:name=".activity.Java8StreamActivity">
+        <activity android:name=".activity.Rx2ArrayActivity">
         </activity>
     </application>
 

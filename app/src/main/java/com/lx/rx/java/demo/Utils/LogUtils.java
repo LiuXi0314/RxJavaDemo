@@ -5,7 +5,7 @@ import android.util.Log;
 import java.util.Date;
 
 public class LogUtils {
-    private static final String TAG = "RxJava";
+    private static final String TAG = "RxJava2";
 
     public static boolean LogEnable = true;
 
