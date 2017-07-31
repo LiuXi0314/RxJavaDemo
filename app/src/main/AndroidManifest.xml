@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".activity.Rx2ArrayActivity">
         </activity>
+        <activity android:name=".activity.ObservableSummaryActivity">
+        </activity>
     </application>
 
 </manifest>

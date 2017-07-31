@@ -24,4 +24,11 @@
         style="@style/ButtonStyle"
         android:text="ArrayAboutRxJava2"/>
 
+
+    <TextView
+        android:id="@+id/observableSummary"
+        style="@style/ButtonStyle"
+        android:text="observable 相关操作符总结"/>
+
+
 </LinearLayout>

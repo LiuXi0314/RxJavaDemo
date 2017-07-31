@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/just"
+            style="@style/ButtonStyle"
+            android:text="just"/>
+
+        <TextView
+            android:id="@+id/from"
+            style="@style/ButtonStyle"
+            android:text="from"/>
+
+        <TextView
+            android:id="@+id/create"
+            style="@style/ButtonStyle"
+            android:text="create"/>
+
+
+        <TextView
+            android:id="@+id/range"
+            style="@style/ButtonStyle"
+            android:text="range"/>
+
+
+        <TextView
+            android:id="@+id/interval"
+            style="@style/ButtonStyle"
+            android:text="interval"/>
+
+
+        <TextView
+            android:id="@+id/timer"
+            style="@style/ButtonStyle"
+            android:text="timer"/>
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/ButtonStyle"
+            android:text="empty"/>
+
+        <TextView
+            android:id="@+id/defer"
+            style="@style/ButtonStyle"
+            android:text="defer"/>
+
+    </LinearLayout>
+</ScrollView>

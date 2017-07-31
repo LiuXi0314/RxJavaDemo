@@ -25,6 +25,9 @@ public class HomeActivity extends BaseActivity {
         findViewById(R.id.ArrayAboutRxJava2)
                 .setOnClickListener(v -> startActivity(new Intent(this, Rx2ArrayActivity.class)));
 
+        findViewById(R.id.observableSummary)
+                .setOnClickListener(v -> startActivity(new Intent(this, ObservableSummaryActivity.class)));
+
     }
 
 }
