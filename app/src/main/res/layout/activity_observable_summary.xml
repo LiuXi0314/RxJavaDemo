@@ -17,6 +17,11 @@
             android:text="just"/>
 
         <TextView
+            android:id="@+id/startWith"
+            style="@style/ButtonStyle"
+            android:text="startWith"/>
+
+        <TextView
             android:id="@+id/from"
             style="@style/ButtonStyle"
             android:text="from"/>
