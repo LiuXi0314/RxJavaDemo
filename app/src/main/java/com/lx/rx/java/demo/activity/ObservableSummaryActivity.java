@@ -102,6 +102,8 @@ public class ObservableSummaryActivity extends BaseActivity {
     //延时操作
     void timer() {
         Observable.timer(1, TimeUnit.SECONDS).subscribe(function -> LogUtils.logCurrentTime());
+
+
     }
 
     void empty() {
@@ -131,4 +133,5 @@ public class ObservableSummaryActivity extends BaseActivity {
 
 
     }
+
 }

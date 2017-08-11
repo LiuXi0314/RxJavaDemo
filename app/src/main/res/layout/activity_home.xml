@@ -30,5 +30,8 @@
         style="@style/ButtonStyle"
         android:text="observable 相关操作符总结"/>
 
-
+    <TextView
+        android:id="@+id/OperatorActivity"
+        style="@style/ButtonStyle"
+        android:text="操作符大全"/>
 </LinearLayout>
